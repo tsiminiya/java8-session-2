@@ -13,6 +13,7 @@ class NumberUtilsSpecification extends Specification {
             length | expected
             3      | [0, 1, 1]
             5      | [0, 1, 1, 2, 3]
+            10     | [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
     }
 
 }

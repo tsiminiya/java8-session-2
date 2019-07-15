@@ -15,8 +15,8 @@ public class NumberUtils {
         return fibonacciStream.collect(Collectors.toList());
     }
 
+    // Hint you may use Stream.iterate(), .map() and .limit()
     private static Stream<Integer> generateFibonacci(int length) {
-        // TODO: implement this method
         return Stream.empty();
     }
 
