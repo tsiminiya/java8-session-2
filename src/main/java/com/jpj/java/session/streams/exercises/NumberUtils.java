@@ -1,4 +1,4 @@
-package com.jpj.java.session.streams.creation;
+package com.jpj.java.session.streams.exercises;
 
 import java.util.List;
 import java.util.stream.Collectors;

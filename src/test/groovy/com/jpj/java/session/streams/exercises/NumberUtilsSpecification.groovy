@@ -1,5 +1,6 @@
-package com.jpj.java.session.streams.creation
+package com.jpj.java.session.streams.exercises
 
+import com.jpj.java.session.streams.exercises.NumberUtils
 import spock.lang.Specification
 
 class NumberUtilsSpecification extends Specification {
