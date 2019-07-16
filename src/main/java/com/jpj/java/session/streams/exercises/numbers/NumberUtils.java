@@ -1,4 +1,4 @@
-package com.jpj.java.session.streams.exercises;
+package com.jpj.java.session.streams.exercises.numbers;
 
 import java.util.List;
 import java.util.stream.Collectors;
