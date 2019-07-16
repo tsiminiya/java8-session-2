@@ -63,7 +63,7 @@ class DefaultGameRepositorySpecification extends Specification {
             })
             List<String> gameNames = games.stream().map(gameToNameMapper).collect(Collectors.toList())
         then:
-            gameNames = ['Baccarat', 'Pusoy Dos', 'Pusoy', 'Tongits', 'Poker', 'Dice', 'Lucky 9']
+            gameNames == ['Baccarat', 'Pusoy Dos', 'Pusoy', 'Tongits', 'Poker', 'Dice', 'Lucky 9']
     }
 
 }

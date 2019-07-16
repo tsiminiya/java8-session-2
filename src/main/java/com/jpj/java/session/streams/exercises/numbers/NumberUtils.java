@@ -1,5 +1,8 @@
 package com.jpj.java.session.streams.exercises.numbers;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -16,8 +19,8 @@ public class NumberUtils {
     }
 
     private static Stream<Integer> generateFibonacci(int length) {
-        // TODO: implement this method
-        return Stream.empty();
+        return Stream.iterate(new IndexValue(1, 0), (iv) -> new IndexValue(iv.index + 1, computeFibonacci(iv.index))).limit(length)
+                .map(iv -> iv.value);
     }
 
     private static Integer computeFibonacci(int number) {
@@ -25,6 +28,13 @@ public class NumberUtils {
             return number;
         }
         return computeFibonacci(number - 1) + computeFibonacci(number - 2);
+    }
+
+    @Data
+    @AllArgsConstructor
+    private static class IndexValue {
+        private int index;
+        private int value;
     }
 
 }
