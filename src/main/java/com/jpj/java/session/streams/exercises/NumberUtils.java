@@ -15,9 +15,16 @@ public class NumberUtils {
         return fibonacciStream.collect(Collectors.toList());
     }
 
-    // Hint you may use Stream.iterate(), .map() and .limit()
     private static Stream<Integer> generateFibonacci(int length) {
+        // TODO: implement this method
         return Stream.empty();
+    }
+
+    private static Integer computeFibonacci(int number) {
+        if (number == 0 || number == 1) {
+            return number;
+        }
+        return computeFibonacci(number - 1) + computeFibonacci(number - 2);
     }
 
 }
