@@ -1,4 +1,4 @@
-package com.jpj.java.session.streams;
+package com.jpj.java.session.streams.creation;
 
 import java.util.stream.Stream;
 

@@ -1,5 +1,6 @@
-package com.jpj.java.session.streams
+package com.jpj.java.session.streams.creation
 
+import com.jpj.java.session.streams.creation.StreamCreator
 import spock.lang.Specification
 import spock.lang.Unroll
 
